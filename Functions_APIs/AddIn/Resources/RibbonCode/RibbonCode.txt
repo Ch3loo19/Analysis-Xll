@@ -1,0 +1,14 @@
+<customUI xmlns='http://schemas.microsoft.com/office/2006/01/customui'>
+	  <ribbon>
+		<tabs>
+		  <tab id='tab1' label='Analysis-Xll'>
+			<group id='group1' label='Debugging'>
+			  <button id='Log1' label='Log' size='large' getImage='GetLogImage' onAction='OnLogButtonPressed'/>
+			</group >
+			<group id='group2' label='Cache Management'>
+			  <button id='Nuke1' label='Nuke Cache' size='large' getImage='GetNukeCacheImage' onAction='OnNukeCacheButtonPressed'/>
+			</group >
+		  </tab>
+		</tabs>
+	  </ribbon>
+	</customUI>

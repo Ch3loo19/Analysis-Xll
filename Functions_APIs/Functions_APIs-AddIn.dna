@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DnaLibrary Name="Functions_APIs Add-In" RuntimeVersion="v4.0" xmlns="http://schemas.excel-dna.net/addin/2018/05/dnalibrary">
+  <ExternalLibrary Path="Analysis-Xll.dll" ExplicitExports="true" LoadFromBytes="true" Pack="true" IncludePdb="false" />
+  <ExternalLibrary Path="Functions_Logic.dll" ExplicitExports="true" LoadFromBytes="true" Pack="true" IncludePdb="false" />
+  <ExternalLibrary Path='MathNet.Numerics.dll' LoadFromBytes='true' Pack='true' ExplicitExports='true' ExplicitRegistration='true' />
+  <Reference Path="ExcelDna.IntelliSense.dll" Pack="true" />
+</DnaLibrary>
+
+
