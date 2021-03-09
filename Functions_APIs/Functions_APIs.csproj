@@ -58,7 +58,6 @@
     <Compile Include="AddIn\AddInManager.cs" />
     <Compile Include="AddIn\RibbonController.cs" />
     <Compile Include="ESG_Classes\Sample_APIs.cs" />
-    <Compile Include="ESG_Classes\FxArray_APIs.cs" />
     <Compile Include="ESG_Classes\StochArray_APIs.cs" />
     <Compile Include="Importers\Importer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

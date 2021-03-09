@@ -38,7 +38,6 @@ namespace Analysis_Xll.AddIn
         {
             Cache<StochArray>.GetCache.ResetCache();
             Cache<Sample>.GetCache.ResetCache();
-            Cache<FxArray>.GetCache.ResetCache();
             Cache<double>.GetCache.ResetCache();
             Cache<int>.GetCache.ResetCache();
             Cache<string>.GetCache.ResetCache();
