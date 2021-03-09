@@ -28,7 +28,7 @@ namespace Analysis_Xll.Importer
         /// <param name="fullPath">The csv path</param>
         /// <returns></returns>
         [ImporterFunction(
-            Name = "Lloyds.Importer.LoadStochArrayFromCsv",
+            Name = "Xll.Importer.LoadStochArrayFromCsv",
             Description = "Imports a StochArray directly from a csv saved in a physical location")]
         public static object ImportStochArrayCsv(
             [ExcelArgument(Description = "The csv path", Name = "CSV path")] string fullPath,
@@ -47,7 +47,7 @@ namespace Analysis_Xll.Importer
         /// <param name="data">The data. This is read in as a 2D object array</param>
         /// <returns></returns>
         [ImporterFunction(
-           Name = "Lloyds.Importer.LoadSampleFromRange",
+           Name = "Xll.Importer.LoadSampleFromRange",
            Description = "Loads data from range and converts to a Sample")]
         public static object LoadSampleFromRange([ExcelArgument(Description = "The range to be read in", Name = "Range")] object[,] data)
         {

@@ -25,7 +25,7 @@ namespace Analysis_Xll.ESG_Classes
         /// </summary>
         /// <param name="hash">The hash of a valid <see cref="Sample"/> object</param>
         [SampleFunctionAttribute(
-            Name = "Lloyds.Sample.Mean",
+            Name = "Xll.Sample.Mean",
             Description = "Calculates the mean of a sample")]
         public static object Mean([ExcelArgument(Description = "The hash of a valid Sample object", Name = "Sample")] string hash)
         {
@@ -37,7 +37,7 @@ namespace Analysis_Xll.ESG_Classes
         /// </summary>
         /// <param name="hash">The hash of a valid <see cref="Sample"/> object</param>
         [SampleFunctionAttribute(
-            Name = "Lloyds.Sample.Median",
+            Name = "Xll.Sample.Median",
             Description = "Calculates the median of a sample")]
         public static object Median([ExcelArgument(Description = "The hash of a valid Sample object", Name = "Sample")] string hash)
         {
@@ -49,7 +49,7 @@ namespace Analysis_Xll.ESG_Classes
         /// </summary>
         /// <param name="hash">The hash of a valid <see cref="Sample"/> object</param>
         [SampleFunctionAttribute(
-            Name = "Lloyds.Sample.Volatility",
+            Name = "Xll.Sample.Volatility",
             Description = "Calculates the volatility of a sample")]
         public static object Volatility([ExcelArgument(Description = "The hash of a valid Sample object", Name = "Sample")] string hash)
         {
@@ -61,7 +61,7 @@ namespace Analysis_Xll.ESG_Classes
         /// </summary>
         /// <param name="hash">The hash of a valid <see cref="Sample"/> object</param>
         [SampleFunctionAttribute(
-            Name = "Lloyds.Sample.Skewness",
+            Name = "Xll.Sample.Skewness",
             Description = "Calculates the skewness of a sample")]
         public static object Skewness([ExcelArgument(Description = "The hash of a valid Sample object", Name = "Sample")] string hash)
         {
@@ -73,7 +73,7 @@ namespace Analysis_Xll.ESG_Classes
         /// </summary>
         /// <param name="hash">The hash of a valid <see cref="Sample"/> object</param>
         [SampleFunctionAttribute(
-            Name = "Lloyds.Sample.Kurtosis",
+            Name = "Xll.Sample.Kurtosis",
             Description = "Calculates the kurtosis of a sample")]
         public static object Kurtosis([ExcelArgument(Description = "The hash of a valid Sample object", Name = "Sample")] string hash)
         {
@@ -85,7 +85,7 @@ namespace Analysis_Xll.ESG_Classes
         /// </summary>
         /// <param name="hash">The hash of a valid <see cref="Sample"/> object</param>
         [SampleFunctionAttribute(
-            Name = "Lloyds.Sample.Min",
+            Name = "Xll.Sample.Min",
             Description = "Calculates the min of a sample")]
         public static object Min([ExcelArgument(Description = "The hash of a valid Sample object", Name = "Sample")] string hash)
         {
@@ -97,7 +97,7 @@ namespace Analysis_Xll.ESG_Classes
         /// </summary>
         /// <param name="hash">The hash of a valid <see cref="Sample"/> object</param>
         [SampleFunctionAttribute(
-            Name = "Lloyds.Sample.Max",
+            Name = "Xll.Sample.Max",
             Description = "Calculates the max of a sample")]
         public static object Max([ExcelArgument(Description = "The hash of a valid Sample object", Name = "Sample")] string hash)
         {
@@ -109,7 +109,7 @@ namespace Analysis_Xll.ESG_Classes
         /// </summary>
         /// <param name="hash">The hash of a valid <see cref="Sample"/> object</param>
         [SampleFunctionAttribute(
-            Name = "Lloyds.Sample.SpreadVAR",
+            Name = "Xll.Sample.SpreadVAR",
             Description = "Calculates the SpreadVAR of a sample, as an average among VARs from 99.4% to 99.6% confidence levels (inclusive), going in 0.01% steps")]
         public static object SpreadVAR([ExcelArgument(Description = "The hash of a valid Sample object", Name = "Sample")] string hash)
         {
@@ -122,7 +122,7 @@ namespace Analysis_Xll.ESG_Classes
         /// <param name="hash">The hash of a valid <see cref="Sample"/> object</param>
         /// <param name="percentileRank">The perecentile rank/param>
         [SampleFunctionAttribute(
-            Name = "Lloyds.Sample.Percentile",
+            Name = "Xll.Sample.Percentile",
             Description = "Calculates the percentile of a sample")]
         public static object Percentile([ExcelArgument(Description = "The hash of a valid Sample object", Name = "Sample")] string hash,
                                         [ExcelArgument(Description = "The percentile rank. Between 0 and 1, inclussive.", Name = "Convidence Level")] object percentileRank)
@@ -139,13 +139,13 @@ namespace Analysis_Xll.ESG_Classes
         /// <param name="hash">The hash of a valid <see cref="Sample"/> object</param>
         /// <param name="percentileRank">The perecentile rank/param>
         [SampleFunctionAttribute(
-            Name = "Lloyds.Async.Sample.Percentile",
+            Name = "Xll.Async.Sample.Percentile",
             Description = "Calculates the percentile of a sample",
             IsHidden = true)]
         public static object PercentileAsync([ExcelArgument(Description = "The hash of a valid Sample object", Name = "Sample")] string hash,
                                         [ExcelArgument(Description = "The percentile rank. Between 0 and 1, inclussive.", Name = "Convidence Level")] object percentileRank)
         {
-            return RunAsync(() => SampleLogic.Percentile(hash, percentileRank), "Lloyds.Async.Sample.Percentile");
+            return RunAsync(() => SampleLogic.Percentile(hash, percentileRank), "Xll.Async.Sample.Percentile");
         }
 
         /// <summary>
@@ -153,12 +153,12 @@ namespace Analysis_Xll.ESG_Classes
         /// </summary>
         /// <param name="hash">The hash of a valid <see cref="Sample"/> object</param>
         [SampleFunctionAttribute(
-            Name = "Lloyds.Async.Sample.SpreadVAR",
+            Name = "Xll.Async.Sample.SpreadVAR",
             Description = "Calculates the SpreadVAR of a sample, as an average among VARs from 99.4% to 99.6% confidence levels (inclusive), going in 0.01% steps",
             IsHidden = true)]
         public static object SpreadVARAsync([ExcelArgument(Description = "The hash of a valid Sample object", Name = "Sample")] string hash)
         {
-            return RunAsync(() => SampleLogic.SpreadVAR(hash), "Lloyds.Async.Sample.SpreadVAR");
+            return RunAsync(() => SampleLogic.SpreadVAR(hash), "Xll.Async.Sample.SpreadVAR");
         }
     }
 }
