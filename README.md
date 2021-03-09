@@ -5,7 +5,7 @@ The most noteble usecase is analysing Economic Scenario Data - ESGs, which are r
 ## How can I debug?
 Hit Start to debug. This will spin-off an instance of Excel, where you can try out the functions packed in the add-in.
 
-## How canI get hold of some test data to interact with?
+## How can I get hold of some test data to interact with?
 Functions_Logic.Tests -> DeploymentItems -> StochReturns 1 or 2
 Load either into memore as a StochArray object. This will yield a hash, which is a pointer to the data stored in RAM
 Then pass the hash into any StochArray APIs.
