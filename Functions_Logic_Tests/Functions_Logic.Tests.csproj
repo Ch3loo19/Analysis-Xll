@@ -21,17 +21,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DeploymentItems\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="DeploymentItems\GBP - CorpGBPAA2-3 - TR.csv">
+    <None Update="DeploymentItems\StochReturns2.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="DeploymentItems\GBP - CorpGBPAA2-3 - TR.xlsx">
+    <None Update="DeploymentItems\StochReturns2.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="DeploymentItems\GBP - EqtyGBP - TR.csv">
+    <None Update="DeploymentItems\StochReturns1.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="DeploymentItems\SpuriousData.csv">

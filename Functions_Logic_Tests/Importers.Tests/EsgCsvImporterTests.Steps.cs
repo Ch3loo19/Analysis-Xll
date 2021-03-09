@@ -14,10 +14,10 @@ namespace Functions_Logic.Tests.Importers.Tests
     {
         //+ Constants
         const string DeploymentFolder = @"DeploymentItems";
-        const string EquityFile = @"GBP - EqtyGBP - TR.csv";
+        const string EquityFile = @"StochReturns1.csv";
         const string SpuriousData = @"SpuriousData.csv";
         const string NonExistentFile = @"DesuDesu.csv";
-        const string WrongExtensionFile = @"GBP - CorpGBPAA2-3 - TR.xlsx";
+        const string WrongExtensionFile = @"StochReturns2.xlsx";
 
         //+ Fileds
         string _relativePath;
